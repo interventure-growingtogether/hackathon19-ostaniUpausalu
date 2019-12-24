@@ -268,7 +268,7 @@ function geronimo() {
             for (var i = 0; i < count; i++) {
                 html += " <img src='img/heart.png'>";
             }
-            $(".lives").html("Lives: " + html);
+            $(".lives").html("Mito: " + html);
 
         };
 
