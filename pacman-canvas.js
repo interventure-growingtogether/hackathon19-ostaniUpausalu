@@ -1425,10 +1425,13 @@ function geronimo() {
 
 
             // Pac Man
+            var pacmanImage = new Image();
+            pacmanImage.src = "img/programercina.png";
+            context.drawImage(pacmanImage, pacman.posX + pacman.radius - 14, pacman.posY + pacman.radius - 14);
             context.beginPath();
             context.fillStyle = "#b3df00";
             context.strokeStyle = "#b3df00";
-            context.arc(pacman.posX + pacman.radius, pacman.posY + pacman.radius, pacman.radius, pacman.angle1 * Math.PI, pacman.angle2 * Math.PI);
+            //context.arc(pacman.posX + pacman.radius, pacman.posY + pacman.radius, pacman.radius, pacman.angle1 * Math.PI, pacman.angle2 * Math.PI);
             context.lineTo(pacman.posX + pacman.radius, pacman.posY + pacman.radius);
             context.stroke();
             context.fill();
