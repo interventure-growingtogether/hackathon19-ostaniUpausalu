@@ -1012,7 +1012,7 @@ function geronimo() {
                             game.startGhostFrightened();
                         } else {
                             Sound.play("waka");
-                            s = 10;
+                            s = 20;
                             game.pillCount--;
                         }
                         game.map.posY[gridY].posX[gridX].type = "null";
