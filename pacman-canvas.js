@@ -519,7 +519,7 @@ function geronimo() {
             this.score += i;
         };
         this.refresh = function (h) {
-            $(h).html("Prihod: " + this.score);
+            $(h).html("Prihod: " + this.score*117.5 + "rsd");
         };
 
     }
