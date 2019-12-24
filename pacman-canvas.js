@@ -1393,6 +1393,8 @@ function geronimo() {
         var dotPosY;
         var coinImg = new Image();
         coinImg.src = "img/coin.png";
+        var subvencijaImg = new Image();
+        subvencijaImg.src = "img/subvencija2.png";
         $.each(game.map.posY, function (i, item) {
             dotPosY = this.row;
             $.each(this.posX, function () {
@@ -1401,7 +1403,8 @@ function geronimo() {
                     context.drawImage(coinImg, game.toPixelPos(this.col - 1) + pacman.radius-7, game.toPixelPos(dotPosY - 1) + pacman.radius-7);
                     context.moveTo(game.toPixelPos(this.col - 1), game.toPixelPos(dotPosY - 1));
                 } else if (this.type == "powerpill") {
-                    context.arc(game.toPixelPos(this.col - 1) + pacman.radius, game.toPixelPos(dotPosY - 1) + pacman.radius, game.powerpillSizeCurrent, 0 * Math.PI, 2 * Math.PI);
+                    //context.arc(game.toPixelPos(this.col - 1) + pacman.radius, game.toPixelPos(dotPosY - 1) + pacman.radius, game.powerpillSizeCurrent, 0 * Math.PI, 2 * Math.PI);
+                    context.drawImage(subvencijaImg,game.toPixelPos(this.col - 1) + pacman.radius - 8, game.toPixelPos(dotPosY - 1) + pacman.radius - 10);
                     context.moveTo(game.toPixelPos(this.col - 1), game.toPixelPos(dotPosY - 1));
                 }
             });
