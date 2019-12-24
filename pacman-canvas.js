@@ -1394,14 +1394,14 @@ function geronimo() {
         context.strokeStyle = "#b3df00";
 
         var dotPosY;
-        var sranje = new Image();
-        sranje.src = "img/coin.png";
+        var coinImg = new Image();
+        coinImg.src = "img/coin.png";
         $.each(game.map.posY, function (i, item) {
             dotPosY = this.row;
             $.each(this.posX, function () {
                 if (this.type == "pill") {
                     //context.arc(game.toPixelPos(this.col - 1) + pacman.radius, game.toPixelPos(dotPosY - 1) + pacman.radius, game.pillSize, 0 * Math.PI, 2 * Math.PI);
-                    context.drawImage(sranje, game.toPixelPos(this.col - 1) + pacman.radius, game.toPixelPos(dotPosY - 1) + pacman.radius);
+                    context.drawImage(coinImg, game.toPixelPos(this.col - 1) + pacman.radius-7, game.toPixelPos(dotPosY - 1) + pacman.radius-7);
                     context.moveTo(game.toPixelPos(this.col - 1), game.toPixelPos(dotPosY - 1));
                 } else if (this.type == "powerpill") {
                     context.arc(game.toPixelPos(this.col - 1) + pacman.radius, game.toPixelPos(dotPosY - 1) + pacman.radius, game.powerpillSizeCurrent, 0 * Math.PI, 2 * Math.PI);
