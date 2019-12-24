@@ -54,9 +54,13 @@
 <div class="content" id="highscore-content">
 	<div class="button" id="back">&lt; back</div>
 	<div>
-		<h1>Highscore</h1>
+		<h2>Legendarni Paušalci:</h2>
 		<p>
-		<ol id="highscore-list"><li>LOLO<span id="score">INF</span></li><li>LOLO<span id="score">INF</span></li><li>LOLO<span id="score">1.0E+277</span></li><li>LOLO<span id="score">1.0E+169</span></li><li>LOLO<span id="score">1.0E+54</span></li><li>LOLO<span id="score">1.0E+54</span></li><li>LOLO<span id="score">1.0E+54</span></li><li>LOLO<span id="score">1.0E+54</span></li><li>LOLO<span id="score">1.0E+54</span></li><li>LOLO<span id="score">1.0E+54</span></li></ol>
+		<ol id="highscore-list">
+		<li>ABond<span id="score">700700700rs</span></li>
+		<li>BezLicna<span id="score">6660000rsd</span></li>
+		<li>ExDr<span id="score">5000000rsd</span></li>
+		<li>24App<span id="score">2424240rsd</span></li>
 		</p>
 	</div>
 </div>
@@ -65,52 +69,65 @@
 <div class="content" id="instructions-content">
 	<div class="button" id="back">&lt; back</div>
 	<div>
-		<h1>Instructions</h1>
+		<h1>Instrukcije</h1><br>
 		<div class="nomobile">
-			<h2>Controls</h2>
-			<p>Use your arrow keys or [W,A,S,D] keys to navigate pacman.</p>
-			<p>To pause / resume the game press [SPACE] or [ESC] or just click into the game area.</p>
+			<h2>Kontrole:</h2>
+			<p>Za navigaciju kroz novi zakon koristite tastere: [W,A,S,D]</p>
+			<p>Za zamrzavanje agencije na neodređeno vreme koristite tastere: [SPACE] ili [ENTER]</p>
+			<br><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
 		</div>
 		<div class="mobile">
-			<h2>Controls</h2>
-			<p>Use swipe gestures to navigate pacman.</p>
-			<p>Alternatively use the Arrow Buttons underneath the game area to navigate pacman.</p>
-			<p>To pause / resume the game, touch the game area once.</p>
+			<h2>Kontrole:</h2>
+			<p>Za navigaciju kroz zakon, svajpujte preko ekrana</p>
+			<p>Takođe možete koristiti strelice na samom ekranu</p>
+			<p>za zamrzavanje agencije na neodređeno vreme kratko pritisnite ekran</p>
+			<br><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
 		</div>
 
 		<div>
-			<h2>Ghosts</h2>
-			<p>Ghosts are creatures that hunt pacman and will kill him if they catch him.</p>
-			<p>Every ghost has its own strategy to chase down pacman.</p>
-			<h3>Inky<img src="img/inky.svg" class="pull-right"></h3>
-			Inky will stay in the ghost house until pacman has eaten at least 30 pills.	His home is the bottom right corner.
-			<h3>Blinky <img src="img/blinky.svg" class="pull-right"></h3>
-			Blinky is the most agressive of the 4 ghosts. He will start chasing pacman right away, and aim directly at him. His home is the upper right corner.
-			<h3>Pinky<img src="img/pinky.svg" class="pull-right"></h3>
-			Pinky will start chasing pacman right away, he will always aim 4 fields ahead and 4 fields left of pacman. His home is the upper left corner.
-			<h3>Clyde<img src="img/clyde.svg" class="pull-right"></h3>
-			Inky will stay in the ghost house until pacman has eaten at least 2/3 of all pills. His home is the bottom left corner.
+			<h2>Inspektori:</h2>
+			<p>Inspektori su stvorenja koja jure poštenog preduzetnika, da bi mu naplatili dodatni porez</p>
+			<p>Svaki inspektor se služi drugim tumačenjem zakona, da bi uspeo da dohvati našeg paušalca.</p>
+			<br><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
+			<h3>Joca<img src="img/pinky.svg" class="pull-right"></h3><br>
+			Joca je tolerantni inspektor. Počinje u poteru za paušalcem nakon 300000rsd u godini. Iz Niš.
+			<br><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
+			<h3>Nikola <img src="img/pinky.svg" class="pull-right"></h3><br>
+			Nikola izlazi iz svoje poreske kućice, kada paušalac pomisli da se izvukao u ovoj poreskoj godini, na jesen. Poreklom iz Novog Pazara.
+			<br><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
+			<h3>Uros<img src="img/pinky.svg" class="pull-right"></h3><br>
+			Uros odmah počinje poteru za paušalcem, koristi se taktikom opkoljavanja, tako da osim paušalca, nema problem da juri i za poslodavcem. Dođoš iz Subotice.
+			<br><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
+			<h3>Dimitrije<img src="img/pinky.svg" class="pull-right"></h3><br>
+			Dimitrije je najagresivniji od svih inspektora. Počinje da juri za paušalcem od 1.3.2020. Direktno ide na samog paušalca. Poslodavci ga ne zanimaju. Iz Beograda.
+			<br><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
 		</div>
 
 		<div>
-			<h2>Ghost moods</h2>
-			The ghosts have two different moods that change the way they act during the game.
-			<h3>Scatter mood</h3>
-			<p>This is the default mood. When ghosts are in scatter mood, they will just go to their home corner and stay there.</p>
-			<img src="img/instructions/instructions_scatter.PNG">
-			<h3>Chase mood</h3>
-			<p>After a certain time the ghosts change their mood and want to go chasing pacman. This is indicated through the walls turning red.</p>
-			<img src="img/instructions/instructions_chase.PNG">
+			<h2>Tumačenja zakona:</h2>
+			Inspektori imaju 2 moda ponašanja
+			<h3>Mod Abolicije:</h3>
+			<p> Na početku se nalaze u svojim kancelarijama, i čekaju da legnu prve fakture na račun paušalca.</p>
+			<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+			<h3>Mod uterivanja nesamostalnog poreza:</h3>
+			<p>Po pristizanju faktura, inspektori se aktiviraju, i počinju da tragaju za nesamostalnim paušalcima, PAUšALCI OPREZ!</p>
+			<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
 		</div>
 
 		<div>
-			<h2>Items</h2>
-			<h3>Pills</h3>
-			<p>The goal of every level is, to eat all the white pills without getting catched by the ghosts. One pill results in 10 points.</p>
-			<h3>Powerpills</h3>
-			<p>In every level there are 4 powerpills, which are a bit bigger than the regular ones. If Pacman eats those, he will get strong enough to eat the ghosts. You can see this indicated by the ghosts turning blue. One powerpill results in 50 points.</p>
-			<img src="img/instructions/instructions_powerpill.PNG">
-			<p>Eating a ghost results in 100 points. The soul of the ghost will return to the ghost house before starting to chase Pacman again.</p>
+			<h2>Korisni predmeti</h2><br>
+			<h3>Novčići:</h3>
+			<p>Cilj svakog nivoa je da paušalac sakupi sav svoj novac sa faktura i izbegne poreske inspektore. Svaki novčić je satnica koji paušalac potražuje. [SKROMNIH 20e/h]</p>
+			<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
+			<h3>Poreske olakšice:</h3>
+			<p>Na svakom nivou, postoje 4 poreske olakšice. One omogucuju paušalcu, da postane imun na poreske inspektore, specijalnim metodama zlatnog slova, koje mu omogućuju da ogole inspektore i prikažu ih u nekom, hajde da kažemo, drugačijem svetlu.</p>
+			<img src="img/subvencija.png">
+			<p>Uklanjanje poreskog inspektora pomoću moći zlatnog slova, donosi paušalcu, bonus na fakturu, koju mu doniraju drugi paušalci. Poreski inspektor će se nakon toga povući nazad u kancelariju, i vratiti u svoj prvobitni oblik</p>
+			<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
+			<h3>Mito:</h3>
+			<p>U jedinstvenoj bazi paušalaca, postoji i mogućnost abolicije od sitnih prekršajnih dela, do 3 puta, kada se po novom zakoniku, paušalac mora proglasiti ponavljačem i krivim. Po hvatanju od strane inspektora, paušalac ako nije ispunio kvotu, može iskorititi moć svetog Mita, da nastavi paušalne aktivnosti.</p>
+			<img src="img/heart.png">
+			<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><br>
 		</div>
 
 	</div>
@@ -176,7 +193,7 @@
 		<div class="controls" id="menu-buttons">
 			<ul>
 				<li class="button" id="newGame">Početak fiskalne godine</li>
-				<li class="button" id="highscore">Highscore</li>
+				<li class="button" id="highscore">Legende paušala</li>
 				<li class="button" id="instructions">Instrukcije</li>
 				<li class="button" id="info">Informacije</li>
 			</ul>

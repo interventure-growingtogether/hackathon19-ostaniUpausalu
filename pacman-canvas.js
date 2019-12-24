@@ -139,7 +139,7 @@ function geronimo() {
         this.map;
         this.pillCount;				// number of pills
         this.monsters;
-        this.level = 1;
+        this.level = 2020;
         this.refreshLevel = function (h) {
             $(h).html("Fiskalna godina: " + this.level);
         };
@@ -377,7 +377,7 @@ function geronimo() {
                 this.score.set(0);
                 this.score.refresh(".score");
                 pacman.lives = 3;
-                game.level = 1;
+                game.level = 2020;
                 this.refreshLevel(".level");
                 game.gameOver = false;
             }
