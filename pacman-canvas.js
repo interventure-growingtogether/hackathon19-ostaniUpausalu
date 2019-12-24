@@ -38,10 +38,7 @@ function geronimo() {
                 action: "get"
             },
             success: function (msg) {
-                $("#highscore-list").text("");
-                for (var i = 0; i < msg.length; i++) {
-                    $("#highscore-list").append("<li>" + msg[i]['name'] + "<span id='score'>" + msg[i]['score'] + "</span></li>");
-                }
+
             }
         });
     }
