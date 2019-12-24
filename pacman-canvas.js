@@ -280,31 +280,31 @@ function geronimo() {
         this.getLevelTitle = function () {
             switch (this.level) {
                 case 2:
-                    return '"The chase begins"';
+                    return '"Potera pocinje"';
                 // activate chase / scatter switching
                 case 3:
-                    return '"Inky\s awakening"';
+                    return '"Inspektorska trojka"';
                 // Inky starts leaving the ghost house
                 case 4:
-                    return '"Clyde\s awakening"';
+                    return '"Svi na jednoga"';
                 // Clyde starts leaving the ghost house
                 case 5:
-                    return '"need for speed"';
+                    return '"Pozuri polako"';
                 // All the ghosts get faster from now on
                 case 6:
-                    return '"hunting season 1"';
+                    return '"Sezona lova 1"';
                 // TODO: No scatter mood this time
                 case 7:
-                    return '"the big calm"';
+                    return '"Zatisje pred buru"';
                 // TODO: Only scatter mood this time
                 case 8:
-                    return '"hunting season 2"';
+                    return '"Sezona lova 2"';
                 // TODO: No scatter mood and all ghosts leave instantly
                 case 9:
-                    return '"ghosts on speed"';
+                    return '"Pomahnitali inspektori"';
                 // TODO: Ghosts get even faster for this level
                 default:
-                    return '"nothing new"';
+                    return '"Opet ponovo"';
             }
         }
 
