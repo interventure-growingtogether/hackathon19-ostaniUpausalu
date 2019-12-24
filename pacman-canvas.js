@@ -148,7 +148,7 @@ function geronimo() {
         };
         this.gameOver = false;
         this.canvas = $("#myCanvas").get(0);
-        this.wallColor = "Green";
+        this.wallColor = "#b3df00";
         this.width = this.canvas.width;
         this.height = this.canvas.height;
 
@@ -433,7 +433,7 @@ function geronimo() {
 
         /* ------------ Start Pre-Build Walls  ------------ */
         this.buildWalls = function () {
-            if (this.ghostMode === 0) game.wallColor = "Green";
+            if (this.ghostMode === 0) game.wallColor = "#b3df00";
             else game.wallColor = "Red";
             canvas_walls = document.createElement('canvas');
             canvas_walls.width = game.canvas.width;
@@ -1390,8 +1390,8 @@ function geronimo() {
 
         // Pills
         context.beginPath();
-        context.fillStyle = "Green";
-        context.strokeStyle = "Green";
+        context.fillStyle = "#b3df00";
+        context.strokeStyle = "#b3df00";
 
         var dotPosY;
         var sranje = new Image();
