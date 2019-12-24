@@ -59,8 +59,8 @@ function geronimo() {
             },
             dataType: 'json',
             success: function (data) {
-                console.log('Highscore added: ' + data);
-                $('#highscore-form').html('<span class="button" id="show-highscore">View Highscore List</span>');
+                console.log('KPO dodata: ' + data);
+                $('#highscore-form').html('<span class="button" id="show-highscore">Vidi KPO knjigu</span>');
             },
             error: function (errorThrown) {
                 console.log(errorThrown);
@@ -70,7 +70,7 @@ function geronimo() {
 
     function addHighscore() {
         var name = $("input[type=text]").val();
-        $("#highscore-form").html("Saving highscore...");
+        $("#highscore-form").html("Fakturisanje...");
         ajax_add(name, game.score.score, game.level);
     }
 
@@ -258,7 +258,7 @@ function geronimo() {
         this.nextLevel = function () {
             this.level++;
             console.log("Level " + game.level);
-            game.showMessage("Level " + game.level, this.getLevelTitle() + "<br/>(Click to continue!)");
+            game.showMessage("Fiskalna godina " + game.level, this.getLevelTitle() + "<br/>(Klikni da nastavis!)");
             game.refreshLevel(".level");
             this.init(1);
         };
