@@ -71,7 +71,7 @@ input[type="text"]:hover, input[type="text"]:focus, input[type="password"]:hover
 }
 #canvas-overlay-content { 
 	position: absolute; 
-	top: 33%; 	
+	top: 33%;
 	left: 0; 
 	margin-top: 0;
 	max-width: 100%; 
